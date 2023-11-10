@@ -5,7 +5,7 @@ export const ResetButton=(props:ResetButtonProps)=>{
 
     return(
         <>
-        <button onClick={()=>props.handleReset()}>
+        <button className='reset-button'onClick={()=>props.handleReset()}>
             Reset
         </button>
         </>

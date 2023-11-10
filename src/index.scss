@@ -20,3 +20,44 @@ code {
   font-family: 'Orbitron';
   margin-top:40px
 }
+
+.reset-button{
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: unset;
+  color: #0096FF;
+  background-color: #1e1e1e;
+  margin-left: 20px;
+  &:hover{
+    background-color: #0096FF;
+    color: #1e1e1e;
+  }
+
+}
+
+.submit-button{
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: unset;
+  color: #1e1e1e;
+  background-color: #0096FF;
+  margin-left: 20px;
+  &:hover{
+    background-color: #1e1e1e;
+    color: #0096FF;
+  }
+  &:disabled{
+    background-color: gray;
+    color: black;
+  }
+}
+
+.blinking-animation {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

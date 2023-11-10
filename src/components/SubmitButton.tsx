@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 export interface SubmitButtonProps{
     handleSubmit:()=>void;
@@ -6,8 +5,10 @@ export interface SubmitButtonProps{
 }
 export const SubmitButton=(props:SubmitButtonProps)=>{
     return (
-        <><button disabled={props.isDisabled}onClick={props.handleSubmit}>
+        <>
+        <button className="submit-button" disabled={props.isDisabled}onClick={props.handleSubmit}>
             Submit
-            </button></>
+        </button>
+        </>
     )
 }
