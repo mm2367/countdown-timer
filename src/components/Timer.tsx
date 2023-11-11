@@ -18,7 +18,6 @@ export const Timer = (props: TimerProps) => {
         let distance = countDownDate - now;
         //show animation in last 60 seconds.
         if(((distance/1000)<=60) && ((distance/1000)>0)){
-            console.log(distance)
             setShowAnimation(true);
         }
         else{
